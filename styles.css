@@ -1,0 +1,292 @@
+body {
+    background-color: rgb(40, 175, 228);
+} /* all pages and contents of website */
+
+main {
+    text-align: center;
+    background-color: rgb(255, 238, 231);
+} /* all pages and content of website, but does NOT include the 'body' element */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.homepage-heading {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+} /* heading of the HOMEPAGE only. will not change the heading of any other pages */
+
+.homepage-heading img {
+    max-width: 500px;
+    width: 25%;
+    height: auto;
+    /* float: left; */
+    border-left: 5%;
+    padding-right: 15%;
+} /*changes all images across the whole website */
+
+.homepage-heading h3 {
+    /* justify-content: center; */
+    padding: 1%;
+}
+
+.divider {
+    height: 40px;
+    width: 5px;
+    /* align-items: center; */
+    background-color: black;
+} /* lines separating the heading menu choices */
+
+.homepage-menu {
+    margin-bottom: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+} /* recipes a-z and tags n all that stuff at the top */
+
+.homepage-menu a {
+    color: purple;
+}
+
+.what button {
+    height: 90%;
+    width: 100%;
+}
+
+.what {
+    width: 500px;
+}
+
+.img-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    /* margin-top: 25px; */
+} /* top circular image on recipe pages */
+
+.img-circle-sm img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    /* margin-top: 25px; */ 
+    aspect-ratio: 1 / 1;
+} /* top circular image on recipe pages */
+
+.homepage-category {
+    /* max-width: 60%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, auto); */
+    justify-content: space-around;
+    /* max-width: 80px; */
+} /* category list that is on the homepage. could potentially use this for all pages? */
+
+.hc-title {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+} /* homepage category heading */
+
+.homepage-sections {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+} /* homepage sections */
+
+h1 {
+    font-size: 50px;
+} /* Only use the website name heading under h1 */
+
+h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+} /* headings on homepage, other than the website name heading */
+
+.columns {
+    max-width: 45%; 
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 15%;
+    padding-bottom: 10px;
+} /* used for the homepage, used to have recipes pages next to each other */
+
+.columns img {
+    margin-top: 5px;
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+} /* homepage recipe images */
+
+span {
+    margin-right: 5%;
+} /* distance between categories in "recipes by category" section */
+
+#ingredients ul {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 30%;
+} /* Ingredients list */
+
+ol {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+} /* ordered list to be used for "instructions" and "notes" sections */
+
+#notes ul {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+} /* Ingredients list */
+
+#notes {
+    padding-bottom: 50px;
+}
+
+.instructions-list li {
+    padding-top: 7px;
+} /* Spacing in between each step of the instructions */
+
+.recipe-page h2 {
+    text-align: center;
+} /* "h2" section above makes all the h2s on the homepage aligned to the left. this makes all the h2s on the recipe screens aligned in the center. */
+
+.recipe-page main {
+    /* background-image: url(images/miami-rice-2.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+} /* Allows the outer border to be an image on recipe pages */
+
+.inside-recipe-page {
+    background-color: rgb(255, 238, 231);
+} /* Affects everything except "recipe page main" */
+
+h1 a {
+    color: rgb(255, 238, 231);
+} /* Recipe name at the top of each page */
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+.bottom {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 50%;
+    padding-bottom: 5%;
+}
+
+img {
+    max-width: 1000px;
+}
+
+.about-me-page img {
+    padding-left: 10%;
+    max-width: 500px;
+    max-height: auto;
+}
+
+.about-me-page-heading {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.about-me-page-content {
+    display: flex;
+    justify-content: center;
+    gap: 10%
+}
+
+.about-me-page-content p {
+    width: 100%;
+    margin-top: 100px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.about-me-page-content img {
+    padding-bottom: 20px;
+}
+
+.recipe-page-heading {
+    text-align: left;
+}
+
+.recipe-page img {
+    /* padding-left: 10%; */
+    max-width: 500px;
+    max-height: auto;
+}
+
+.recipe-title {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.list-columns a {
+    color: brown;
+}
+
+.list-links-tools {
+    text-align: left;
+    width: 70%;
+    display: inline-block;
+}
+
+.list-links-ingredients {
+    text-align: left;
+    width: 70%;
+    display: inline-block;
+}
+
+.list-links-tools h3 {
+    text-align: center
+}
+
+.list-columns {
+    max-width: 60%; 
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 15%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.jump-button {
+    padding-bottom: 20px;
+}
+
+.jump-button button:hover {
+    cursor: pointer;
+}
